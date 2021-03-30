@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" conetent="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <title>TO-DO LIST</title>
+</head>
+
+<body>
+    <div class="maindiv">
+        <!--  HEADER  -->
+        <div class="header">
+            <h1>MY DAILY TASK </h1>
+            <!-- CONTAINER -->
+            <div class="container">
+                <input type="text" id="myInput" class="task" placeholder="Insert task here...">
+                <span onclick="newElement()" class="button" id="addBtn"><i class="fa fa-plus"></i></span>
+            </div>
+        </div>
+        <div class="secondMain">
+            <ol class="incomplete" id="undone">
+                <h2>Things need to be done:</h2>
+                <li id="myList"></li>
+            </ol>
+        <hr>
+            <ol class="complete" id="done">
+                <h2>Finished task:</h2>
+                <li id="completedList"></li>
+            </ol>
+
+        </div>
+
+    </div>
+    <!-- JAVASCRIPT SOURCE -->
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
